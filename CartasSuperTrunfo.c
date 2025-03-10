@@ -1,22 +1,50 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main()
+{
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Variáveis
+
+    char codCarta[3], codCarta2[3];
+    int populacao, numPonTuris, populacao2, numPonTuris2;
+    float area, pib, area2, pib2;
+
+    // Coleta de dados carta 1
+
+    printf("Super Trunfo - Países\n");
+    printf("Digite o código da carta 1: ");
+    scanf("%s", codCarta);
+    printf("Digite o número da população: ");
+    scanf("%i", &populacao);
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%i", &numPonTuris);
+    printf("Digite a área da cidade: ");
+    scanf("%f", &area);
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", &pib);
+
+    // Coleta de dados carta 2
+
+    printf("\nDigite o código da carta 2: ");
+    scanf("%s", codCarta2);
+    printf("Digite o número da população: ");
+    scanf("%i", &populacao2);
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%i", &numPonTuris2);
+    printf("Digite a área da cidade: ");
+    scanf("%f", &area2);
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", &pib2);
+
+    // Saída de dados carta 1
+
+    printf("\nCódigo Carta 1: %s\nNúmero da População: %i\nPontos turísticos: %i\nÁrea: %f\nPIB: %f\n",
+           codCarta, populacao, numPonTuris, area, pib);
+
+    // Saída de dados carta 2
+
+    printf("\nCódigo Carta 2: %s\nNúmero da População: %i\nPontos turísticos: %i\nÁrea: %f\nPIB: %f",
+           codCarta2, populacao2, numPonTuris2, area2, pib2);
 
     return 0;
 }
